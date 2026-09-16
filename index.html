@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AMIR MOTORS</title>
+</head>
+
+<body>
+
+    <div onclick="toggle_sidebar()" class="sidebar-mobile" id="sidebar-mobil">
+        <div  class="topside">
+            <img src="assets/icons8-exit-50.png"  alt="">
+        </div>
+
+
+
+        <div class="nav-mobile">
+            <div class="navmob">
+            <a href="index.html"  class="nav-button" style="color:  rgb(0, 140, 255);" id="nav-button-1" onclick="navigation_clicked('nav-button-1')" >HOME</a>
+            <div style="background-color:  rgb(0, 140, 255);" class="nav-b-line" ></div>
+            </div>
+
+            <div class="navmob">
+            <a href="inventory.html" class="nav-button" id="nav-button-2" onclick="navigation_clicked('nav-button-2')" >INVENTORY</a>
+            <div class="nav-b-line"></div>
+            </div>
+
+            <div class="navmob">
+            <a href="" class="nav-button" id="nav-button-5" onclick="navigation_clicked('nav-button-4')" >ABOUT US</a>
+            <div class="nav-b-line"></div>
+            </div>
+
+            <div class="navmob">
+            <a href="" class="nav-button" id="nav-button-6" onclick="navigation_clicked('nav-button-5')" >CONTACT</a>
+            <div class="nav-b-line"></div>
+            </div>
+            
+            <div class="navmob">
+            <p href="" class="nav-button" id="nav-button-6" onclick="modal_show()" >SUPPORT</p>
+            <div class="nav-b-line"></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <div class="success-message" id="successMessage">
+                <p id="success-message-in">Message Sended</p>
+    </div>
+
+
+
+    <button class="support-button1" onclick="modal_show()">
+        <img src="assets/support.png" alt="">
+    </button>
+
+    <div class="modal-support" id="modal-support">
+        <div class="modal-h">
+            <div class="modal-hl">
+                <img src="assets/icons8-chat-48.png" alt=""
+                style="
+                width: 40px;
+                height: 40px;">
+
+                <div class="modalhlr">
+                    <h4 style="color: rgb(219, 219, 219);">Submit a Support Request</h3>
+                    <span style="
+                        font-size: smaller;
+                        color: rgb(111, 111, 111);">Fill out the Form Below
+                        and our team will get back
+                        to you Shortly
+                    </span>
+                </div>
+
+            </div>
+            
+            <button onclick="modal_hide()"><img src="assets/icons8-close-50.png" style="
+            width: 20px;
+            height: 20px;" alt=""></button>
+        </div>
+        <div style="height: 2px; width: 100%; background-color: gray;"></div>
+        <div class="modal-form">
+            <div class="input1">
+                <div class="input12">
+                <label for="">Full Name</label>
+                <input id="i1" class="input-s "  type="text" placeholder="Enter your full name">
+                <div style="display: none;" class="errorinput" id="error-input1">
+                    ENTER FULL NAME
+                </div>
+                </div>
+                
+                <div class="input12">
+                <label for="">Email Address</label>
+                <input id="i2" class="input-s " type="text" placeholder="Enter your email address">
+                <div style="display: none;" class="errorinput" id="error-input2">
+                    ENTER EMAIL RIGHT
+                </div>    
+            </div>
+            </div>
+                <div class="insput">
+                <label for="">Message</label>
+                <textarea class="input-s"  id="i3"></textarea>
+                </div>
+            
+            <button class="submit-s" onclick="send_support()">SUBMIT</button>
+            
+
+        </div>
+    </div>
+
+
+
+
+
+    <nav>
+        
+        <div class="left-nav">
+            <img  src="assets/logo.png" alt="">
+            <span class="span1" >AMIR</span>
+            <span class="span1-1">MOTORS</span>
+        </div>
+
+        <div class="center-nav">
+            <div class="navbc">
+            <a href="index.html"  class="nav-button" style="color:  rgb(0, 140, 255);" id="nav-button-1" onclick="navigation_clicked('nav-button-1')" >HOME</a>
+            <div style="background-color:  rgb(0, 140, 255);" class="nav-b-line" ></div>
+            </div>
+
+            <div class="navbc">
+            <a href="inventory.html" class="nav-button" id="nav-button-2" onclick="navigation_clicked('nav-button-2')" >INVENTORY</a>
+            <div class="nav-b-line"></div>
+            </div>
+
+            <!-- <div class="navbc">
+            <a href="" class="nav-button" id="nav-button-3" onclick="navigation_clicked('nav-button-3')" >SERVICES</a>
+            <div class="nav-b-line"></div>
+            </div> -->
+
+
+            <div class="navbc">
+            <a href="" class="nav-button" id="nav-button-5" onclick="navigation_clicked('nav-button-4')" >ABOUT US</a>
+            <div class="nav-b-line"></div>
+            </div>
+
+            <div class="navbc">
+            <a href="" class="nav-button" id="nav-button-6" onclick="navigation_clicked('nav-button-5')" >CONTACT</a>
+            <div class="nav-b-line"></div>
+            </div>
+        </div>
+
+        <div class="right-nav">
+            <img src="assets/telephone.png" style="width: 25px;" alt="">
+            <span>(98) 09037258156</span>
+            <a class="CONTACT-button" href="#contact">GET IN TOUCH</a>
+        </div>
+        <p onclick="toggle_sidebar()" class="sidebard-button">|||</p>
+    </nav>
+
+    <header>
+        <div class="banner">
+            <p>-- PREMIUM VEHICLES. TRUSTED SERVICE.</p>
+            <h1 class="h1">DRIVE EXCELLENCE</h1>
+            <div class="h1-1-c">
+                <h1 class="h1-1">CHOOSE</h1>
+                <h1 class="h1-1">AMIR MOTORS.</h1>
+            </div>
+            <p class="p1-1">
+                Discover a curated selection of luxary, performance,<br>
+                and reliable vehicles . Quality you can trust.
+            </p>
+            <div class="banner-buttons">
+                <a href="inventory.html" class="b1">
+                    BROWSE INVENTORY 
+                    <img src="assets/next.png" style="width: 10px; height: 10px;" alt="">
+                </a>
+                <a href="#services" class="b2">CONTACT US</a>
+                
+            </div>
+        </div>
+        <div class="why-us">
+            <div class="e1">
+                <img src="assets/trust.png" alt="">
+                <div class="e1-text">
+                    
+                    <h3>100% TRUSTED</h3>
+                    <p>Verified Vehicles</p>
+                </div>
+            </div>
+            <div class="line-why-us"></div>
+
+            <div class="e1">
+                <img src="assets/quality.png" alt="">
+                <div class="e1-text">
+                    <h3>PREMIUM QUALITY</h3>
+                    <p>Inspected & Certified</p>
+                </div>
+            </div>
+            <div class="line-why-us"></div>
+            <div class="e1">
+                <img src="assets/price.png" alt="">
+            <div class="e1-text">
+                <h3>BEST PRICE GUARANTEE</h3>
+                <p>Unbeatable Deals</p>
+            </div>
+            </div>
+            <div class="line-why-us"></div>
+            <div class="e1">
+                <img src="assets/customer.png" alt="">
+                <div class="e1-text">
+                    <h3>CUSTOMER FIRST</h3>
+                    <p>Satisfaction br Guaranteed</p>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+
+    <main>
+        <div class="titr">
+        <div class="line-main"></div>
+        <h1>FEATURED INVENTORY</h1>
+        </div>
+        <section class="product-main">
+                <div class="product-titr">
+                    <a href="inventory.html">VIEW ALL INVENTORY </a>
+                </div>
+                <div class="product-holder-main">
+
+
+
+                    <div id="card-1" class="cardm">
+                        <div class="card-up">
+                        <span>2023</span>
+                            <div class="heart-wrapper">
+                                <input type="checkbox" id="heart-1" class="heart-input">
+                                <label for="heart-1" class="heart"></label>
+                            </div>
+                        </div>
+
+                                <div class="card-img">
+                                    <img class="card-img" src="assets/mercedes gt53.png" alt="">
+                                </div>
+
+
+
+                        <div class="card-mohtava">
+
+                            <h3>Mercedes Gt63</h3>
+                            <p>9,800 miles . Automatic . RWD</p>
+                            <span>129,000$</span>
+                        </div>
+                    </div>
+
+
+
+<div id="card-2" class="cardm">
+                        <div class="card-up">
+                        <span>2024</span>
+                        <div class="heart-wrapper">
+                            <input type="checkbox" id="heart-2" class="heart-input">
+                            <label for="heart-2" class="heart"></label>
+                        </div>
+                        </div>
+
+                                <div class="card-img">
+                                    <img class="card-img" src="assets/rolls_roys-clinen.png" alt="">
+                                </div>
+                        <div class="card-mohtava">
+
+                            <h3>ROLLS ROYCE CULLINAN</h3>
+                            <p>3,000 miles . Automatic . AWD</p>
+                            <span>441,350$</span>
+                        </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="card-3" class="cardm">
+                        <div class="card-up">
+                        <span>2018</span>
+                        <div class="heart-wrapper">
+                            <input type="checkbox" id="heart-3" class="heart-input">
+                            <label for="heart-3" class="heart"></label>
+                        </div>
+                        </div>
+
+                                <div class="card-img">
+                                    <img class="card-img" src="assets/mersedecsls.png" alt="">
+                                </div>
+                        <div class="card-mohtava">
+
+                            <h3>Mercedes SLS</h3>
+                            <p>139 miles . Automatic . RWD</p>
+                            <span>249,650$</span>
+                        </div>
+
+</div>
+
+<div id="card-4" class="cardm">
+                        <div class="card-up">
+                        <span>2020</span>
+                        <div class="heart-wrapper">
+                            <input type="checkbox" id="heart-4" class="heart-input">
+                            <label for="heart-4" class="heart"></label>
+                        </div>
+                        </div>
+
+                                <div class="card-img">
+                                    <img class="card-img" src="assets/bugatti chiron displayed_18496164.png" alt="">
+                                </div>
+                        <div class="card-mohtava">
+
+                            <h3>BUGATTI CHIRON</h3>
+                            <p>79 miles . Automatic . RWD</p>
+                            <span>3,900,000$</span>
+                        </div>
+</div>
+                </div>
+        </section>
+    </main>
+
+    <footer style="background-color: aqua;" class="main-footer">
+            <div  style="color: aliceblue;
+            font-size: 30px;
+            font-family: 'fonte-asli';" class="counter-display" id="time">00:00:00</div>
+        
+        <div class="serviscontainer">
+            <div class="serviscontainerleft">
+                
+                <h2 style="color: white;">WHY CHOOSE AMIR MOTORZ ?</h2>
+                <div class="service-cont-moh">
+                    <p>At Amir Motors , we combine luxary with relaiability.</p>
+                    <p>Our team is dedicated to providing a premium car</p>
+                    <p>buying experience from start to finish.</p>
+                    <p>Address : Iran , Ahwaz , Kian Abad ,car city 1 , AMIR MOTORZ </p>
+                </div>
+                <a href="">LEARN MORE ABOUT US</a>
+
+            </div>
+            <div class="serviscontainerright">
+                <img src="assets/amir_motorz_photo.png" alt="">
+            </div>
+        </div>
+
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+

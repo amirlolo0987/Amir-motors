@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+</head>
+<body id="invenbody">
+
+
+
+    <nav class="inventory-nav">
+    <div class="left-nav">
+        <img src="assets/logo.png" alt="" />
+        <span class="span1">AMIR</span>
+        <span class="span1-1">MOTORS</span>
+    </div>
+
+    <div class="center-nav">
+        <div class="navbc">
+        <a
+            href="index.html"
+            class="nav-button"
+            id="nav-button-1"
+            onclick="navigation_clicked('nav-button-1')"
+            >HOME</a
+        >
+        <div class="nav-b-line"></div>
+        </div>
+
+        <div class="navbc">
+        
+        <a
+            href="inventory.html"
+            style="color: rgb(0, 140, 255)"
+            class="nav-button"
+            id="nav-button-2"
+            onclick="navigation_clicked('nav-button-2')"
+            >INVENTORY</a
+        >
+        <div
+            style="background-color: rgb(0, 140, 255)"
+            class="nav-b-line"
+        ></div>
+        </div>
+
+
+
+        <div class="navbc">
+        <a
+            href=""
+            class="nav-button"
+            id="nav-button-5"
+            onclick="navigation_clicked('nav-button-5')"
+            >ABOUT US</a
+        >
+        <div class="nav-b-line"></div>
+        </div>
+
+        <div class="navbc">
+        <a
+            href=""
+            class="nav-button"
+            id="nav-button-6"
+            onclick="navigation_clicked('nav-button-6')"
+            >CONTACT</a
+        >
+        <div class="nav-b-line"></div>
+        </div>
+    </div>
+
+    <div class="right-nav">
+        <img src="assets/telephone.png" style="width: 25px" alt="" />
+        <span>(98) 09037258156</span>
+        <a class="CONTACT-button" href="#contact">GET IN TOUCH</a>
+    </div>
+    </nav>
+    <main  class="main-inven">
+
+        <header class="header-inven" >
+            <div class="headi">
+                <span onclick="filters('suv')" >SUV</span>
+                <span onclick="filters('sedan')">SEDAN</span>
+            </div>
+            <div  class="headi">
+                <input id="input-search" type="text" placeholder="Search make,model or keyword">
+                <img src="assets/" alt="">
+            </div>
+            <div class="headi">
+                <span onclick="filters('sport')">SPORT</span>
+                <span onclick="filters('luxury')">LUXURY</span>
+            </div>
+        </header>
+
+        <section class="product-holder">
+
+
+<div id="card-2" data-category="luxury" class="card">
+                        <div class="card-up">
+                        <span>2024</span>
+                        <div class="heart-wrapper">
+                            <input type="checkbox" id="heart-2" class="heart-input">
+                            <label for="heart-2" class="heart"></label>
+                        </div>
+                        </div>
+
+                                <div class="card-img">
+                                    <img class="card-img" src="assets/rolls_roys-clinen.png" alt="">
+                                </div>
+                        <div class="card-mohtava">
+
+                            <h3>ROLLS ROYCE CULLINAN</h3>
+                            <p>3,000 miles . Automatic . AWD</p>
+                            <span>441,350$</span>
+                        </div>
+</div>
+
+
+
+
+<div id="card-1"  data-category="sedan" class="card">
+                        <div class="card-up">
+                        <span>2023</span>
+                            <div class="heart-wrapper">
+                                <input type="checkbox" id="heart-1" class="heart-input">
+                                <label for="heart-1" class="heart"></label>
+                            </div>
+                        </div>
+
+                                <div class="card-img">
+                                    <img class="card-img" src="assets/mercedes gt53.png" alt="">
+                                </div>
+                        <div class="card-mohtava">
+                            <h3>Mercedes Gt63</h3>
+                            <p>9,800 miles . Automatic . RWD</p>
+                            <span>129,000$</span>
+                        </div>
+                    </div>
+
+
+<div id="card-3"  data-category="sport" class="card">
+                        <div class="card-up">
+                        <span>2018</span>
+                        <div class="heart-wrapper">
+                            <input type="checkbox" id="heart-3" class="heart-input">
+                            <label for="heart-3" class="heart"></label>
+                        </div>
+                        </div>
+
+                                <div class="card-img">
+                                    <img class="card-img" src="assets/mersedecsls.png" alt="">
+                                </div>
+                        <div class="card-mohtava">
+
+                            <h3>Mercedes SLS</h3>
+                            <p>139 miles . Automatic . RWD</p>
+                            <span>249,650$</span>
+                        </div>
+
+</div>
+
+
+
+
+<div id="card-4"  data-category="luxury" class="card">
+                        <div class="card-up">
+                        <span>2020</span>
+                        <div class="heart-wrapper">
+                            <input type="checkbox" id="heart-4" class="heart-input">
+                            <label for="heart-4" class="heart"></label>
+                        </div>
+                        </div>
+
+                                <div class="card-img">
+                                    <img class="card-img" src="assets/bugatti chiron displayed_18496164.png" alt="">
+                                </div>
+                        <div class="card-mohtava">
+
+                            <h3>BUGATTI CHIRON</h3>
+                            <p>79 miles . Automatic . RWD</p>
+                            <span>3,900,000$</span>
+                        </div>
+</div>
+
+
+        <div id="card-5"  data-category="sport" class="card">
+            <div class="card-up">
+                <span>2022</span>
+                <div class="heart-wrapper">
+                    <input type="checkbox" id="heart-5" class="heart-input">
+                    <label for="heart-5" class="heart"></label>
+                </div>
+            </div>
+            <div class="card-img">
+                <img  class="card-img" src="assets/inventory_photos/audi r8.jpg">
+            </div>
+            <div class="card-mohtava">
+                <h3>Audi R8</h3>
+                <p>30,000 miles . Automatic . SPORT</p>
+                <span>150,000$</span>
+            </div>
+        </div>
+
+
+
+        <div id="card-6"  data-category="sport" class="card">
+            <div class="card-up">
+                <span>2024</span>
+                <div class="heart-wrapper">
+                    <input type="checkbox" id="heart-6" class="heart-input">
+                    <label for="heart-6" class="heart"></label>
+                </div>
+            </div>
+            <div class="card-img">
+                <img  class="card-img" src="assets/inventory_photos/bmw m3.jpg">
+            </div>
+            <div class="card-mohtava">
+                <h3>BMW M3</h3>
+                <p>79,000 miles . Automatic . SPORT</p>
+                <span>85,000$</span>
+            </div>
+        </div>
+
+
+
+
+
+        <div id="card-7" data-category="suv" class="card">
+            <div class="card-up">
+                <span>2023</span>
+                <div class="heart-wrapper">
+                    <input type="checkbox" id="heart-7" class="heart-input">
+                    <label for="heart-7" class="heart"></label>
+                </div>
+            </div>
+            <div class="card-img">
+                <img  class="card-img" src="assets/inventory_photos/cadilak esclade.jpg">
+            </div>
+            <div class="card-mohtava">
+                <h3>Cadillac Escalade</h3>
+                <p>13,000 miles . Automatic . SUV</p>
+                <span>90,000$</span>
+            </div>
+        </div>
+
+
+
+
+        <div id="card-8"  data-category="suv"  class="card">
+            <div class="card-up">
+                <span>2025</span>
+                <div class="heart-wrapper">
+                    <input type="checkbox" id="heart-8" class="heart-input">
+                    <label for="heart-8" class="heart"></label>
+                </div>
+            </div>
+            <div class="card-img">
+                <img  class="card-img" src="assets/inventory_photos/landcroui2se.jpg">
+            </div>
+            <div class="card-mohtava">
+                <h3>TOYOTA Land Cruiser</h3>
+                <p>10,000 miles . Automatic . SUV</p>
+                <span>58,000$</span>
+            </div>
+        </div>
+
+
+
+
+        </section>
+
+    </main>
+
+
+        <footer  class="footer-inven"></footer>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
